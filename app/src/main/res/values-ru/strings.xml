@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">Assignment1</string>
     <string name="hello_message">Zdravstvuyte!</string>
-    <string name="ButtonText">I\'m a button</string>
+    <string name="ButtonText">Ya knopka</string>
 </resources>
