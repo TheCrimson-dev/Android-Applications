@@ -3,4 +3,10 @@
     <string name="app_name">Assignment1</string>
     <string name="hello_message">Zdravstvuyte!</string>
     <string name="ButtonText">Ya knopka</string>
+    <string name="LoginText">Avtorizatsya</string>
+    <string name="LoginHint">neema at avtorizatsya</string>
+    <string name="password_text">paroil</string>
+    <string name="SwitchText"> Shto eto delayet?</string>
+    <string name="Checkbox_Text">Flachok</string>
+    <string name="RadioButton">Pereklyuchatel</string>
 </resources>
