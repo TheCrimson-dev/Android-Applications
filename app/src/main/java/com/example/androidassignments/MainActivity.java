@@ -49,7 +49,7 @@ public final class MainActivity extends AppCompatActivity {
         }
         if (responseCode == Activity.RESULT_OK){
             String messagePassed = data.getStringExtra("Response");
-            int time = Toast.LENGTH_SHORT;
+            int time = Toast.LENGTH_LONG;
             Toast display = Toast.makeText(this, messagePassed, time);
             display.show();
         }

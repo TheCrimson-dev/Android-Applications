@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment1</string>
+    <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Zdravstvuyte!</string>
     <string name="ButtonText">Ya knopka</string>
     <string name="LoginText">Avtorizatsya</string>
@@ -14,4 +14,7 @@
     <string name="dialog_title">Dela zakonchan!</string>
     <string name="ok">Horosho</string>
     <string name="cancel">Otmena</string>
+    <string name="switch_on">Vyklyuchatel kloochon</string>
+    <string name="switch_off">Vyklyuchatel vlikoochon</string>
+    <string name="activity_completed">Listitems peredany: Moya informatsiya, kotoroy ya khochu podelitsya</string>
 </resources>

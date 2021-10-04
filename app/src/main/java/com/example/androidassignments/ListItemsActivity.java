@@ -47,14 +47,14 @@ public class ListItemsActivity extends AppCompatActivity {
         SwitchText.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton switchView, boolean isChecked) {
                 if (isChecked == true){
-                    CharSequence textOn = "Switch is On";
+                    CharSequence textOn = getString(R.string.switch_on);
                     int duration = Toast.LENGTH_SHORT; //= Toast.LENGTH_LONG if Off
 
                     Toast toast = Toast.makeText(ListItemsActivity.this , textOn, duration); //this is the ListActivity
                     toast.show(); //display your message box
                 }
                 if (isChecked == false){
-                    CharSequence textOn = "Switch is Off";
+                    CharSequence textOn = getString(R.string.switch_off);
                     int duration = Toast.LENGTH_LONG; //= Toast.LENGTH_LONG if Off
 
                     Toast toast = Toast.makeText(ListItemsActivity.this , textOn, duration); //this is the ListActivity
@@ -76,7 +76,7 @@ public class ListItemsActivity extends AppCompatActivity {
                         .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 Intent resultIntent = new Intent(  );
-                                resultIntent.putExtra("Response", "You have completed the activity!");
+                                resultIntent.putExtra("Response", getString(R.string.activity_completed));
                                 setResult(Activity.RESULT_OK, resultIntent);
                                 finish(); // User clicked OK button
                             }
