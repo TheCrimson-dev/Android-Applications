@@ -9,4 +9,9 @@
     <string name="SwitchText"> Shto eto delayet?</string>
     <string name="Checkbox_Text">Flachok</string>
     <string name="RadioButton">Pereklyuchatel</string>
+    <string name="LoginButton">Veehodeet</string>
+    <string name="dialog_message">Ti hochas zakonchat etot delat?</string>
+    <string name="dialog_title">Dela zakonchan!</string>
+    <string name="ok">Horosho</string>
+    <string name="cancel">Otmena</string>
 </resources>

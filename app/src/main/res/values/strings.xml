@@ -8,4 +8,9 @@
     <string name="SwitchText"> What does this do?</string>
     <string name="Checkbox_Text">Checkbox</string>
     <string name="RadioButton">Radio Button</string>
+    <string name="LoginButton">Login</string>
+    <string name="dialog_message">Would you like to finish the activity?</string>
+    <string name="dialog_title">Activity complete!</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>

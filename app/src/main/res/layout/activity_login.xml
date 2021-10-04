@@ -34,4 +34,11 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:text="@string/LoginButton" />
+
 </LinearLayout>
