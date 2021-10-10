@@ -17,4 +17,6 @@
     <string name="switch_on">Vyklyuchatel kloochon</string>
     <string name="switch_off">Vyklyuchatel vlikoochon</string>
     <string name="activity_completed">Listitems peredany: Moya informatsiya, kotoroy ya khochu podelitsya</string>
+    <string name="ChatButton">Nachonayet rasgovaroveet</string>
+    <string name="SendChat">Otpravit</string>
 </resources>

@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidassignments">
 
-    <application
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
+    <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,15 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments">
 
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MainActivity" />
+
+        <activity
+            android:name=".ChatWindow"
+            android:exported="true"
+            android:parentActivityName= ".MainActivity"/>
         <activity
             android:name=".ListItemsActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:parentActivityName= ".MainActivity">
 
         </activity>
 
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:parentActivityName= ".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,15 +41,12 @@
         </activity>
 
         <activity
-
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName= ".MainActivity">
 
         </activity>
 
-
     </application>
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
+
 </manifest>
