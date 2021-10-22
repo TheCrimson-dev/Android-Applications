@@ -18,5 +18,20 @@
     <string name="activity_completed">ListItemsActivity passed: My information to share</string>
     <string name="ChatButton">Start Chat</string>
     <string name="SendChat">Send</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="action_one">First Action</string>
+    <string name="action_two">Second Action</string>
+    <string name="action_three">Third Action</string>
+    <string name="TestToolbar">Test Toolbar</string>
+    <string name="about_action">About</string>
+    <string name="tool_dialog_title">Would you like to go back?</string>
+    <string name="empty_message">New message</string>
 
 </resources>

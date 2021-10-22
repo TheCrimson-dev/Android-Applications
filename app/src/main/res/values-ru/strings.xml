@@ -19,4 +19,22 @@
     <string name="activity_completed">Listitems peredany: Moya informatsiya, kotoroy ya khochu podelitsya</string>
     <string name="ChatButton">Nachonayet rasgovaroveet</string>
     <string name="SendChat">Otpravit</string>
+    <string name="title_activity_test_toolbar">PropoboyInstrumentov</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="action_one">Pervey</string>
+    <string name="action_two">Ftoroy</string>
+    <string name="action_three">Tretcey</string>
+    <string name="TestToolbar">Propoboy Instrumentov</string>
+    <string name="about_action">Naheedeeta</string>
+    <string name="tool_dialog_title">Ti hochos paitcee nazat?</string>
+    <string name="empty_message">Novoi napecanya</string>
+    <string name="first_fragment_label">Pervey Koosochok</string>
+    <string name="second_fragment_label">Vtoroy Koosochok</string>
+    <string name="next">Haadoim</string>
+    <string name="previous">Nazat</string>
+    <string name="hello_first_fragment">Prevet Pervey Koosochok</string>
+    <string name="hello_second_fragment">Prevet vtoroy Koosochok. Arg: %1$s</string>
+
+
+
 </resources>

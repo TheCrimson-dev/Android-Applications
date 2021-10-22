@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_one"
+        android:title="One"
+        android:icon="@drawable/icons8_spider_24"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_two"
+        android:title="Two"
+        android:icon="@drawable/icons8_thriller_24"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_three"
+        android:title="Three"
+        android:icon="@drawable/icons8_year_of_dragon_24"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/actionBtnAbout"
+        app:showAsAction="never"
+        android:orderInCategory="104"
+        android:title="@string/about_action" />
+
+
+</menu>

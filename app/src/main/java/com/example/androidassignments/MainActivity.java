@@ -22,6 +22,7 @@ public final class MainActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "MainActivity";
     Button ButtonText;
     Button ChatButton;
+    Button testToolbar;
 
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,6 +50,16 @@ public final class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ChatWindow.class);
                 startActivity(intent);
 
+            }
+        });
+        Button testToolbarButton = findViewById(R.id.testToolbar);
+        testToolbarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked Test Toolbar");
+
+                Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+                startActivity(intent);
             }
         });
     }
