@@ -120,4 +120,15 @@ public class TestToolbar extends AppCompatActivity {
         }
         return true;
     }
+    @Override
+
+    public void onBackPressed() {
+
+        super.onBackPressed();
+
+        setResult(Activity.RESULT_CANCELED);
+
+        finish();
+
+    }
 }

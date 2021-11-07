@@ -62,6 +62,17 @@ public final class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button weatherButton = findViewById(R.id.forecastButton);
+        weatherButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked Weather Button");
+
+                Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
@@ -101,5 +112,16 @@ public final class MainActivity extends AppCompatActivity {
     protected void onDestroy(){
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
+    }
+    @Override
+
+    public void onBackPressed() {
+
+        super.onBackPressed();
+
+        setResult(Activity.RESULT_CANCELED);
+
+        finish();
+
     }
 }

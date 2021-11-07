@@ -38,4 +38,5 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
 
     }
+
 }
