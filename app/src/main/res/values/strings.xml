@@ -34,5 +34,15 @@
     <string name="tool_dialog_title">Would you like to go back?</string>
     <string name="empty_message">New message</string>
     <string name="Weather_Button">Weather Forecast</string>
+    <string-array name= "cities">
+
+        <item>Ottawa</item>
+        <item>Toronto</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+        <item>Calgary</item>
+        <item>Edmonton</item>
+
+    </string-array>
 
 </resources>

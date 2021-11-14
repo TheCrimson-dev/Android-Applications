@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,12 +25,23 @@ public final class MainActivity extends AppCompatActivity {
     Button ButtonText;
     Button ChatButton;
     Button testToolbar;
+    Spinner spin;
 
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
+
+
+
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_main);
         Log.i(ACTIVITY_NAME, "In onCreate()");
+
+        spin = (Spinner) findViewById(R.id.citySpinner);
+        ArrayAdapter<CharSequence> adapt = ArrayAdapter.createFromResource(this, R.array.cities, android.R.layout.simple_spinner_item);
+        adapt.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spin.setAdapter(adapt);
+
         Intent intent = getIntent();
         if (intent != null) {
             Log.d(ACTIVITY_NAME, "Received Intent");
@@ -62,14 +75,24 @@ public final class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button weatherButton = findViewById(R.id.forecastButton);
         weatherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Weather Button");
 
+
+
                 Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
+
+
+                String selectCity = spin.getSelectedItem().toString();
+                Bundle bundle = new Bundle();
+                bundle.putString("city", selectCity);
+                intent.putExtras(bundle);
                 startActivity(intent);
+
             }
         });
 

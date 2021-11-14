@@ -35,6 +35,17 @@
     <string name="hello_first_fragment">Prevet Pervey Koosochok</string>
     <string name="hello_second_fragment">Prevet vtoroy Koosochok. Arg: %1$s</string>
     <string name="Weather_Button">Pagoda</string>
+    <string-array name= "cities">
+
+        <item>Ottawa</item>
+        <item>Toronto</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+        <item>Calgary</item>
+        <item>Edmonton</item>
+
+    </string-array>
+
 
 
 

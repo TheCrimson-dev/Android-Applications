@@ -39,19 +39,13 @@ public class WeatherForecast extends AppCompatActivity {
     TextView min_temp;
     TextView current_temp;
     Spinner spin;
-    String urlAPPID = "http://api.openweathermap.org/data/2.5/weather?q=ottawa,ca&APPID=8a9f6bdf05f4ce482ae83bcd2785b80f&mode=xml&units=metric";
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather_forecast);
-
-        String[] cities = {"ottawa", "toronto", "montreal", "vancouver", "calgary", "edmonton"};
-        spin = findViewById(R.id.spinner);
-        ArrayAdapter<String> adapt = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,cities);
-        adapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spin.setAdapter(adapt);
 
         current_temp = findViewById(R.id.currentTemperature);
         min_temp = findViewById(R.id.minTemperature);
@@ -63,22 +57,9 @@ public class WeatherForecast extends AppCompatActivity {
 
         ForecastQuery forecast = new ForecastQuery();
         forecast.execute();
-
-        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                urlAPPID = "https://api.openweathermap.org/data/2.5/weather?q="+ spin.getSelectedItem().toString() +"ca&APPID=8a9f6bdf05f4ce482ae83bcd2785b80f&mode=xml&units=metric";
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
     }
 
-    public class ForecastQuery extends AsyncTask<String, Integer, String> {
+    private class ForecastQuery extends AsyncTask<String, Integer, String> {
         String minTemperature;
         String maxTemperature;
         String currentTemperature;
@@ -87,7 +68,9 @@ public class WeatherForecast extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             try {
-                URL url = new URL(urlAPPID);
+                Bundle bundle = getIntent().getExtras();
+                String cityChoose = bundle.getString("city");
+                URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + cityChoose + ",ca&APPID=8a9f6bdf05f4ce482ae83bcd2785b80f&mode=xml&units=metric");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setReadTimeout(10000 /* milliseconds */);
                 connection.setConnectTimeout(15000 /* milliseconds */);
